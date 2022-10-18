@@ -7,8 +7,8 @@ body {
 
 main {
     background-color: white;
-    margin: 0px 30% auto 30%;
-    padding: 0 2rem;
+    margin: o;
+   
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     animation: maindrop 1s cubic-bezier(0.25, 0.1, 0.63, 1.84) forwards;
 }
@@ -47,6 +47,7 @@ li {
     font-size: 1.4rem;
     list-style: none;
     animation: add-list 0.5s forwards;
+    text-align: center;
 }
 
 img { 
@@ -98,6 +99,7 @@ img {
     animation: warning 2s forwards;
     font-size: 0.8rem;
  }
+
 
 
  /* || Pseudo Selectors */
@@ -184,3 +186,35 @@ li:hover {
         opacity: 1;
     }
 }
+
+/* || Media Queries */
+
+
+@media screen and (min-width:768px) {
+    body {
+        margin: 0px 20% auto 20%;
+        padding: 0 2rem;
+    }
+}
+    
+@media screen and (min-width:1024px) {
+    body {
+        margin: 0px 23% auto 23%;
+    }
+}
+    
+@media screen and (min-width:1280px) {
+    body {
+        margin: 0px 26% auto 26%;
+    } 
+}
+    
+@media screen and (min-width:1536px) {
+    body {
+        margin: 0px 29% auto 29%;
+    }
+} 
+    
+     
+    
+
