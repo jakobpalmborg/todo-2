@@ -11,14 +11,19 @@
 
 <body>
     <header>
-        <h1>TODO</h1>
+        
     </header>
     
     <main>
+        <h1>My ToDo</h1>
+        <div class="container completed">
+            <p class="numberDone">0</p>
+            <p>completed</p>
+        </div>
         <div class="container input">
             <form>
-                <input type="text" class="todo-input" placeholder="Do it!" required>
-                <button class="todo-button" type="submit"><i class="fa-solid fa-plus fa-xl"></i></button>
+                <input type="text" class="todo-input" required>
+                <button class="todo-button" type="submit">OK</button>
             </form>
         </div>
        
@@ -27,29 +32,16 @@
             </ul>
         </div>
         
-        <div class="container completed">
-            <i class="fa-solid fa-check-double fa-fade"></i>
-            <p class="numberDone">0</p>
-        </div>
+        
 
-        <div class="container clear-container">
+        <!-- <div class="container clear-container">
             <button class="clearAll"><i class="fa-solid fa-skull-crossbones fa-2xl "></i></button>
-         </div> 
+         </div>  -->
          
-         <div class="container links">
-         <ul>
-            <li>
-                <a onclick="document.querySelector('link').href = 'other.css';">Other CSS</a>
-            </li>
-            <li>
-                <a onclick="document.querySelector('link').href = 'styles.css';">Original CSS</a>
-            </li>
-        </ul>
-    </div> 
+   
+    
     </main>
-    <footer>
-        <p>TODO</p>
-    </footer>
+   
     <script src="script.js"></script>  
 </body>
 </html>
