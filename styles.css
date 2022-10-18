@@ -1,0 +1,7 @@
+.clear-container {
+    display: none;
+}
+
+.line span {
+    text-decoration: line-through;
+}
