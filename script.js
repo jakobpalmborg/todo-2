@@ -14,7 +14,7 @@ function handleSubmitForm(e) {
 }
 
 function handleClickDeleteOrCheck(e) {
-  if (e.target.name == "checkButton") checkTodo(e);
+  if (e.target.className == "todo-item") checkTodo(e);
 
   if (e.target.name == "deleteButton") deleteTodo(e);
 }
@@ -24,8 +24,8 @@ function addTodo(todo) {
   let li = document.createElement("li");
   li.innerHTML = `
         <span class="todo-item">${todo}</span>
-        <button name="checkButton" class="checkBtn">&#10003;</button>
-        <button name="deleteButton" class="deleteBtn">&#10005;</button>
+        
+        <button name="deleteButton" class="deleteBtn"><img src="trash-2.jpg" alt="trash"></button>
     `;
   ul.appendChild(li);
 
