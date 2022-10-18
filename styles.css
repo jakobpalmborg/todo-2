@@ -1,11 +1,8 @@
-* {
-    /* border: 1px solid red; */
-}
+/* || Elements */
 
 body {
     background: linear-gradient(#FEC4C0, #FA7879) fixed;
     margin: 0;
-    
 }
 
 main {
@@ -14,12 +11,6 @@ main {
     padding: 0 2rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     animation: maindrop 1s cubic-bezier(0.25, 0.1, 0.63, 1.84) forwards;
-
-}
-
-.container {
-    display: flex; 
-    justify-content: center;
 }
 
 h1 {
@@ -48,11 +39,34 @@ form {
     animation-delay: 1.4s;
 }
 
-.todo-button {
-    height: 1.7rem;
-}
 input {
     height: 1.3rem;
+}
+
+li {
+    font-size: 1.4rem;
+    list-style: none;
+    animation: add-list 0.5s forwards;
+}
+
+img { 
+    height: 1.4rem;
+    border: none;
+    z-index: -1;
+    position: relative;
+    margin-left: 0.5rem;
+}
+
+
+/* || Classes */
+
+.container {
+    display: flex; 
+    justify-content: center;
+}
+
+.todo-button {
+    height: 1.7rem;
 }
 
 .completed {
@@ -63,32 +77,6 @@ input {
 .clear-container {
     display: none;
 }
-
-.line span {
-    text-decoration: line-through;
-    animation: check-fade 1s forwards;
-}
-
-
-
-li {
-    font-size: 1.4rem;
-    list-style: none;
-    animation: add-list 0.5s forwards;
-}
-
-li:hover {
-    cursor: pointer;
-}
-
- img { 
-    height: 1.4rem;
-    border: none;
-    z-index: -1;
-    position: relative;
-    margin-left: 0.5rem;
-}
-
 .deleteBtn {
     background-color: transparent;
     border: none;
@@ -97,14 +85,13 @@ li:hover {
     opacity: 0.5;
  } 
 
- 
 
- .deleteBtn:hover {
-    opacity: 1;
-    cursor: pointer;
- }
+.line span {
+    text-decoration: line-through;
+    animation: check-fade 1s forwards;
+}
 
- .warning-animate {
+.warning-animate {
     padding: 0;
     margin: 0;
     color: red;
@@ -112,8 +99,20 @@ li:hover {
     font-size: 0.8rem;
  }
 
- 
 
+ /* || Pseudo Selectors */
+
+li:hover {
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* || Animations */
 
 @keyframes maindrop {
     0% {

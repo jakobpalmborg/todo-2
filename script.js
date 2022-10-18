@@ -2,7 +2,6 @@ document.querySelector("form").addEventListener("submit", handleSubmitForm);
 document.querySelector("ul").addEventListener("click", handleClickDeleteOrCheck);
 document.querySelector(".clearAll").addEventListener("click", clearAll);
 
-
 const todoArr = [];
 let num = 0;
 const numberDone = document.querySelector(".numberDone");
