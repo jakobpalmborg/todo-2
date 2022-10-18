@@ -2,6 +2,7 @@ document.querySelector("form").addEventListener("submit", handleSubmitForm);
 document.querySelector("ul").addEventListener("click", handleClickDeleteOrCheck);
 document.querySelector(".clearAll").addEventListener("click", clearAll);
 
+
 const todoArr = [];
 let num = 0;
 const numberDone = document.querySelector(".numberDone");
@@ -9,8 +10,16 @@ const numberDone = document.querySelector(".numberDone");
 function handleSubmitForm(e) {
   e.preventDefault();
   let input = document.querySelector("input");
-  if (input.value != "") addTodo(input.value);
+  let p = document.querySelector(".warning");
+ 
+  if (input.value != "") {addTodo(input.value);
   input.value = "";
+  p.innerHTML = "";
+  p.classList.remove("warning-animate")
+} else {
+    p.innerHTML = "Input must not be empty";
+    p.classList.add("warning-animate");
+  }
 }
 
 function handleClickDeleteOrCheck(e) {
@@ -22,10 +31,8 @@ function handleClickDeleteOrCheck(e) {
 function addTodo(todo) {
   let ul = document.querySelector("ul");
   let li = document.createElement("li");
-  li.innerHTML = `
-  
-       
-  <span class="todo-item">${todo}</span>
+  li.innerHTML = ` 
+        <span class="todo-item">${todo}</span>
         <button name="deleteButton" class="deleteBtn"><img src="trash-2.jpg" alt="trash"></button>
         `;
   ul.appendChild(li);

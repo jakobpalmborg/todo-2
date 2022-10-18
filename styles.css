@@ -51,20 +51,19 @@ form {
     margin-bottom: 1rem;
 }
 
-
-
 .clear-container {
     display: none;
 }
 
 .line span {
     text-decoration: line-through;
+    animation: check-fade 1s forwards;
 }
 
 li {
     font-size: 1.4rem;
     list-style: none;
-    
+    animation: add-list 0.5s forwards;
 }
 
  img { 
@@ -73,7 +72,6 @@ li {
     z-index: -1;
     position: relative;
     margin-left: 0.5rem;
-   
 }
 
 .deleteBtn {
@@ -81,7 +79,22 @@ li {
     border: none;
     z-index: 1;
     position: absolute;
+    opacity: 0.5;
  } 
+
+ .deleteBtn:hover {
+    opacity: 1;
+ }
+
+ .warning-animate {
+    padding: 0;
+    margin: 0;
+    color: red;
+    animation: warning 2s forwards;
+ }
+
+ 
+
 
 @keyframes maindrop {
     0% {
@@ -94,6 +107,59 @@ li {
 
 @keyframes intro-fade {
     0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes add-list {
+    0% {
+        margin-top:2rem;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0rem;
+        opacity: 1;
+    }
+}
+
+
+@keyframes check-fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes add-list {
+    0% {
+        margin-top:2rem;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0rem;
+        opacity: 1;
+    }
+}
+
+@keyframes warning {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1
+    }
+    80% {
         opacity: 0;
     }
     100% {
