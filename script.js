@@ -23,10 +23,11 @@ function addTodo(todo) {
   let ul = document.querySelector("ul");
   let li = document.createElement("li");
   li.innerHTML = `
-        <span class="todo-item">${todo}</span>
-        
+  
+       
+  <span class="todo-item">${todo}</span>
         <button name="deleteButton" class="deleteBtn"><img src="trash-2.jpg" alt="trash"></button>
-    `;
+        `;
   ul.appendChild(li);
 
   const todoObject = {};
