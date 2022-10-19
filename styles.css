@@ -1,14 +1,13 @@
-/* || Elements */
+/* || ELEMENTS */
 
 body {
     background: linear-gradient(#FEC4C0, #FA7879) fixed;
-    margin: 0;
 }
 
 main {
     background-color: white;
     margin: o;
-   
+    padding-bottom: 0.8rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     animation: maindrop 1s cubic-bezier(0.25, 0.1, 0.63, 1.84) forwards;
 }
@@ -20,6 +19,7 @@ h1 {
     animation: intro-fade 1s forwards;
     animation-delay: 1s;
     font-size: 2.3rem;
+    text-align: center;
 }
 
 p, li {
@@ -31,6 +31,7 @@ p {
     opacity: 0;
     animation: intro-fade 0.8s forwards;
     animation-delay: 1.2s;
+
 }
 
 form {
@@ -48,6 +49,12 @@ li {
     list-style: none;
     animation: add-list 0.5s forwards;
     text-align: center;
+    padding-bottom: 0.3rem;
+    word-wrap: break-word; 
+}
+
+ul {
+    padding-right: 2.5rem;
 }
 
 img { 
@@ -59,7 +66,7 @@ img {
 }
 
 
-/* || Classes */
+/* || CLASSES */
 
 .container {
     display: flex; 
@@ -86,7 +93,6 @@ img {
     opacity: 0.5;
  } 
 
-
 .line span {
     text-decoration: line-through;
     animation: check-fade 1s forwards;
@@ -96,13 +102,17 @@ img {
     padding: 0;
     margin: 0;
     color: red;
-    animation: warning 2s forwards;
+    animation: warning 1s forwards;
     font-size: 0.8rem;
+    
+ }
+
+ .warning-div {
+    text-align: center;
  }
 
 
-
- /* || Pseudo Selectors */
+ /* || PSEUDO SELECTORS */
 
 li:hover {
     cursor: pointer;
@@ -114,7 +124,7 @@ li:hover {
 }
 
 
-/* || Animations */
+/* || ANIMATIONS */
 
 @keyframes maindrop {
     0% {
@@ -187,13 +197,13 @@ li:hover {
     }
 }
 
-/* || Media Queries */
 
+/* || MEDIA QUERIES */
 
 @media screen and (min-width:768px) {
     body {
         margin: 0px 20% auto 20%;
-        padding: 0 2rem;
+        
     }
 }
     
