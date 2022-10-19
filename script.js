@@ -32,7 +32,7 @@ function addTodo(todo) {
   let li = document.createElement("li");
   li.innerHTML = ` 
         <span class="todo-item">${todo}</span>
-        <button name="deleteButton" class="deleteBtn"><img src="trash-2.jpg" alt="trash"></button>
+        <button name="deleteButton" class="deleteBtn">🗑️</button>
         `;
   ul.appendChild(li);
 

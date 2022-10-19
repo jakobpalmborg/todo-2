@@ -31,7 +31,6 @@ p {
     opacity: 0;
     animation: intro-fade 0.8s forwards;
     animation-delay: 1.2s;
-
 }
 
 form {
@@ -89,7 +88,7 @@ img {
     background-color: transparent;
     border: none;
     z-index: 1;
-    position: absolute;
+    /* position: absolute; */
     opacity: 0.5;
  } 
 
@@ -104,8 +103,7 @@ img {
     color: red;
     animation: warning 1s forwards;
     font-size: 0.8rem;
-    
- }
+}
 
  .warning-div {
     text-align: center;
@@ -202,26 +200,25 @@ li:hover {
 
 @media screen and (min-width:768px) {
     body {
-        margin: 0px 20% auto 20%;
-        
+        margin: 0px 27% auto 27%;
     }
 }
     
 @media screen and (min-width:1024px) {
     body {
-        margin: 0px 23% auto 23%;
+        margin: 0px 30% auto 30%;
     }
 }
     
 @media screen and (min-width:1280px) {
     body {
-        margin: 0px 26% auto 26%;
+        margin: 0px 33% auto 33%;
     } 
 }
     
 @media screen and (min-width:1536px) {
     body {
-        margin: 0px 29% auto 29%;
+        margin: 0px 36% auto 36%;
     }
 } 
     
