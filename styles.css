@@ -3,11 +3,11 @@ body {
 }
 
 main {
+    animation: maindrop 1s cubic-bezier(0.25, 0.1, 0.63, 1.84) forwards;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: o;
     padding-bottom: 0.8rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    animation: maindrop 1s cubic-bezier(0.25, 0.1, 0.63, 1.84) forwards;
 }
 
 @keyframes maindrop {
@@ -26,12 +26,12 @@ main {
 }
 
 .heading {
-    padding-top: 1rem;
-    margin-bottom: 0;
-    opacity: 0;
     animation: intro-fade 1s forwards;
     animation-delay: 1s;
     font-size: 2.3rem;
+    margin-bottom: 0;
+    opacity: 0;
+    padding-top: 1rem;
     text-align: center;
 }
 
@@ -40,11 +40,11 @@ p, li {
 }
 
 .completed {
-    margin-bottom: 1rem;
-    font-size: 0.8rem;
-    opacity: 0;
     animation: intro-fade 0.8s forwards;
     animation-delay: 1.2s;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    opacity: 0;
 }
 
 .numberDone {
@@ -53,9 +53,9 @@ p, li {
 }
 
 .input-div {
-    opacity: 0;
     animation: intro-fade 0.6s forwards;
     animation-delay: 1.4s;
+    opacity: 0;
 }
 
 @keyframes intro-fade {
@@ -81,11 +81,11 @@ ul {
 }
 
 li {
+    animation: add-list 0.5s forwards;
     font-size: 1.4rem;
     list-style: none;
-    animation: add-list 0.5s forwards;
-    text-align: center;
     padding-bottom: 0.3rem;
+    text-align: center;
     word-wrap: break-word; 
 }
 
@@ -106,8 +106,8 @@ li:hover {
 }
 
 .line span {
-    text-decoration: line-through;
     animation: check-fade 1s forwards;
+    text-decoration: line-through;
 }
 
 @keyframes check-fade {
@@ -123,13 +123,13 @@ li:hover {
 .deleteBtn {
     background-color: transparent;
     border: none;
-    z-index: 1;
     opacity: 0.5;
- } 
+    z-index: 1;
+} 
 
 .deleteBtn:hover {
-    opacity: 1;
     cursor: pointer;
+    opacity: 1;
 }
 
 .warning-div {
@@ -137,11 +137,11 @@ li:hover {
 }
 
 .warning-animate {
-    padding: 0;
-    margin: 0;
-    color: red;
     animation: warning 1s forwards;
+    color: red;
     font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
 }
 
 @keyframes warning {
